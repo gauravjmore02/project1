@@ -13,7 +13,7 @@ public class RegisterPageTest extends TestBase{
 	{
 		HomePage home_obj=new HomePage(driver);
 		RegisterPage reg_obj=new RegisterPage(driver);
-		
+		logger.info("object is created");
 		home_obj.clickOnRegisterTab();
 		reg_obj.clickOnMaleGenderButton();
 		reg_obj.enterFirstName();
@@ -25,6 +25,8 @@ public class RegisterPageTest extends TestBase{
 		reg_obj.entercompanyName();
 		reg_obj.enterPassword();
 		reg_obj.enterConformPassword();
+		logger.info("Imformation completed");
 		reg_obj.clickOnRegisterButton();
+		logger.info("Registration is done");
 	}
 }

@@ -15,9 +15,10 @@ public class AddToCartFunctionality extends TestBase{
 		HomePage home_obj=new HomePage(driver);
 		ProductPage prod_obj=new ProductPage(driver);
 		ProductDisplayPage pdp_obj=new  ProductDisplayPage(driver);
-		
+		logger.info("object is created.");
 		home_obj.searchTheproduct();
 		prod_obj.clickOnNokiaLumina1020Phone();
+		logger.info("Product is searched.");
 		pdp_obj.clickOnAddToCartButton();
 		home_obj.clickOnShoppingCartTab();
 	}

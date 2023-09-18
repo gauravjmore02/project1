@@ -13,12 +13,13 @@ public class LogInFunctionality extends TestBase {
 	{
 		HomePage home_obj=new HomePage(driver);
 		LoginPage logIn_obj=new LoginPage(driver);
-		
+		logger.info("object is created.");
 		home_obj.clickOnLogInTab();
 		logIn_obj.enterEmailIdtoLogIn();
+		
 		logIn_obj.enterPasswordToLogIn();
 		logIn_obj.clickOnLoginButton();
-		
+		logger.info("login ");
 	}
 
 }

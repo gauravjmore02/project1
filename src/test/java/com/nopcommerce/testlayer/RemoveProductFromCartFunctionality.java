@@ -17,11 +17,13 @@ public class RemoveProductFromCartFunctionality extends TestBase{
 		ProductPage prod_obj=new ProductPage(driver);
 		ProductDisplayPage pdp_obj=new  ProductDisplayPage(driver);
 		CartPage cart_obj=new CartPage(driver);
-		
+		logger.info("object is created");
 		home_obj.searchTheproduct();
 		prod_obj.clickOnNokiaLumina1020Phone();
 		pdp_obj.clickOnAddToCartButton();
 		home_obj.clickOnShoppingCartTab();
+		logger.info("nevigated to Shopping Cart");
 		cart_obj.clickOnRemoveProductButton();
+		logger.info("product remove from the cart.");
 	}
 }
