@@ -3,7 +3,8 @@ package com.nopcommerce.testbase;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -15,9 +16,9 @@ public class TestBase {
 	@BeforeMethod
 	public void setUp()
 	{
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.operadriver().setup();
 		
-		driver = new ChromeDriver();
+		driver = new OperaDriver();
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
