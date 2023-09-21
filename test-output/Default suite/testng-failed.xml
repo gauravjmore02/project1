@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.nopcommerce.testlayer.AddToCartFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyTheSearchFunctionality"/>
+          <include name="tearDown"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testlayer.AddToCartFunctionality -->
+      <class name="com.nopcommerce.testlayer.RegisterPageTest">
+        <methods>
+          <include name="verifyTheRegisterPageFunctionality"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testlayer.RegisterPageTest -->
+      <class name="com.nopcommerce.testlayer.RemoveProductFromCartFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyTheRemoveProductFromCartFunctionality"/>
+          <include name="tearDown"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testlayer.RemoveProductFromCartFunctionality -->
+      <class name="com.nopcommerce.testlayer.LogInFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTheLoginFunctionalityUsingValidCredencial"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testlayer.LogInFunctionality -->
+      <class name="com.nopcommerce.testlayer.WishListFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTheWishListFunctionality"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testlayer.WishListFunctionality -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
